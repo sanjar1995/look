@@ -1,0 +1,108 @@
+{
+	"locale": {
+		"en": "English",
+		"ru": "Русский",
+		"uz": "O'zbekcha"
+	},
+	"header": {
+		"home": "Home",
+		"vacancy": "Vacancy",
+		"ourAddresses": "Branches",
+		"contacts": "Contacts",
+		"cart": "Cart",
+		"lang": "Select lang"
+	},
+	"product": {
+		"addToCart": "Add To Cart",
+		"currency": "uzs",
+		"added": "added to cart"
+	},
+	"contacts": {
+		"title": "Contacts",
+		"callCenter": "Call-Center / Delivery:",
+		"officeTitle": "Office adress:",
+		"office": "Tashkent, Yunusabad district, 13th block, Akhmad Donish street, 1A",
+		"workTime": "Office hours:",
+		"email": "Email:",
+		"bot": "You can order delivery through our bot:"
+	},
+	"cart": {
+		"emptyTitle": "Oh, empty!",
+		"emptySub": "Your cart is empty, open the «Menu» and select the product you like.",
+		"emptyBtn": "Add to Cart",
+		"mainTopTitle": "Your cart",
+		"mainTopClear": "Claer cart",
+		"mainCurrency": "uzs",
+		"mainTotal": "Total:",
+		"mainCheckout": "Checkout"
+	},
+	"checkout": {
+		"title": "Checkout",
+		"info": "Personal data",
+		"infoName": "Name",
+		"orders": "Your order",
+		"orderCurrency": "uzs",
+		"address": "Address",
+		"addressPlaceholder": "Find yourself on the map and click to select",
+		"comment": "Note",
+		"commentPlaceholder": "Leave a note with your order if necessary",
+		"paymentType": "Payment type",
+		"paymentCash": "Cash",
+		"paymentOnline": "Online payment",
+		"paymentCard": "Terminal",
+		"total": "Total",
+		"orderSum": "Order price",
+		"deliveryPrice": "Delivery price",
+		"unknown": "Unknown",
+		"deliveryTime": "Delivery time",
+		"dMinutes": "from 40 min",
+		"totalSum": "Total Sum",
+		"confirm": "Confirm",
+		"swal": {
+			"checkOrder": "Have you checked your order?",
+			"checkOrderYes": "Yes",
+			"checkOrderNo": "No",
+			"ordreCancel": "The order has not been sent!",
+			"phoneErrorText": "Please enter a correct phone number!",
+			"formErrorText": "Fill the form!",
+			"oops": "Oops...",
+			"orderAcceptTitle": "Thank you for your order!",
+			"orderAcceptText": "Our operator will contact you shortly.",
+			"orderPaymentError": "Insufficient funds or problems with your card bank!"
+		},
+		"onlinePay": {
+			"title": "Enter card details",
+			"cardNumberTitle": "Card number",
+			"cardDateTitle": "Date of expiry",
+			"continue": "Continue",
+			"cancel": "Cancel",
+			"smsCodeTitle": "Enter SMS code",
+			"smsCodeSub": "Code is send to",
+			"smsCodeSec": "sec",
+			"successPaymentTitleHead": "Success!",
+			"successPaymentTitle": "You have successfully paid",
+			"successPaymentCurrency": "uzs.",
+			"successPaymentScreen": "Please take a screenshot of the receipt.",
+			"successPaymentViewCheck": "To view your receipt, click the button below.",
+			"successPaymentBtnCheck": "Order receipt",
+			"oferta1": "I agree with the",
+			"oferta2": "Public Offer"
+		},
+		"payError": {
+			"error": "Error",
+			"cardNumberError": "The card details were entered incorrectly!",
+			"reenter": "Enter again",
+			"cancel": "Cancel",
+			"errorOTP": "The SMS code was entered incorrectly!",
+			"errorLocation": "Geolocation is not supported by your browser or the API is not loaded.",
+			"cardInputNotValid": "Enter your card details!",
+			"smsInputNotValid": "Enter the code from SMS!"
+		}
+	},
+	"footer": {
+		"findUsMap": "Find us on the map",
+		"vacancy": "Vacancy",
+		"address": "Our Addresses",
+		"menu": "Menu"
+	}
+}

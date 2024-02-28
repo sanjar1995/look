@@ -1,0 +1,108 @@
+.home {
+  margin: 250px 0;
+
+  &-swipers {
+    height: 680px;
+    position: relative;
+
+    @include media(1070) {
+      height: 480px;
+    }
+    @include media(960) {
+      height: 380px;
+    }
+    @include media(760) {
+      height: 280px;
+    }
+    @include media(460) {
+      height: 200px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 1 !important;
+  }
+  .swiper-pagination-bullet-active {
+    width: 30px !important;
+    background: #c00a27 !important;
+    border-radius: 5px;
+  }
+
+  .home-swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+
+    &__slide {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &-title {
+        font-size: 190px;
+        max-width: 50%;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.products {
+  margin-top: 100px;
+
+  &__block {
+    margin-bottom: 50px;
+    padding-top: 100px;
+  }
+
+  &__title {
+    margin: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: 0.41px;
+    color: black;
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 180px);
+    justify-content: center;
+    grid-auto-rows: auto;
+    gap: 15px;
+
+    @include media(1240) {
+      grid-template-columns: repeat(5, 180px);
+    }
+    @include media(960) {
+      grid-template-columns: repeat(4, 180px);
+    }
+    @include media(790) {
+      grid-template-columns: repeat(3, 180px);
+    }
+    @include media(590) {
+      grid-template-columns: repeat(2, 180px);
+    }
+    @include media(420) {
+      grid-template-columns: repeat(2, 150px);
+    }
+  }
+}

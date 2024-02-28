@@ -1,0 +1,81 @@
+@import "utils/vars";
+@import "fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  background: #f1f1f1 !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-c00a27;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-ffae00;
+  border-radius: 12px;
+}
+
+input,
+textarea,
+select,
+button {
+  border: 1px solid $border-base;
+  background: transparent;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin media($size) {
+  @media (max-width: #{$size}px) {
+    @content;
+  }
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include media(1340) {
+    max-width: 1220px;
+  }
+
+  @include media(1240) {
+    max-width: 1020px;
+  }
+
+  @include media(1080) {
+    max-width: 920px;
+  }
+
+  @include media(950) {
+    max-width: unset;
+  }
+}
+
+@import "./common.scss";

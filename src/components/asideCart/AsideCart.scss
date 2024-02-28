@@ -1,0 +1,320 @@
+.aside {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1200;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.3s linear;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  &.close {
+    visibility: hidden;
+    opacity: 0;
+    & .aside-cart {
+      transform: translateX(100%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &-cart {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.3s linear;
+
+    @include media(800) {
+      max-width: 100%;
+    }
+
+    &__close {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      & button {
+        border: none;
+        cursor: pointer;
+        & svg {
+          transition: 0.2s linear;
+
+          @include media(490) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        &:hover {
+          & svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    &__footer {
+      width: 100%;
+
+      &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        background: $color-c00a27;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        color: #fff;
+        letter-spacing: 0.38px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      &-price {
+        margin-bottom: 15px;
+        font-size: 25px;
+        font-weight: 700;
+        color: #000;
+
+        & span {
+          color: $color-c00a27;
+          font-size: 26px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__empty {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-info {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 15px;
+
+        &-title,
+        &-sub {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 25px;
+          color: rgb(132, 145, 154);
+          letter-spacing: 0.38px;
+          text-align: center;
+        }
+      }
+    }
+
+    &__main {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 10px;
+
+      &-top {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(132, 145, 154);
+        margin-bottom: 25px;
+        margin-top: 10px;
+
+        &-title {
+          margin: 0px;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 28px;
+          color: rgb(0, 0, 0);
+          letter-spacing: 0.35px;
+
+          @include media(390) {
+            font-size: 18px;
+          }
+        }
+
+        &-clear {
+          margin: 0px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 25px;
+          color: red;
+          letter-spacing: 0.38px;
+          cursor: pointer;
+
+          @include media(390) {
+            font-size: 18px;
+          }
+        }
+      }
+      &-products {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: auto;
+        height: 65%;
+
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: $color-ffae00;
+          border-radius: 12px;
+        }
+
+        &-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 15px 0;
+
+          &-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: 40px;
+          }
+
+          &-right {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+          }
+
+          &-img {
+            width: 100px;
+            height: 95px;
+            object-fit: contain;
+
+            @include media(490) {
+              width: 80px;
+              height: 75px;
+            }
+          }
+
+          &-delete {
+            width: 20px;
+            height: 20px;
+            border: none;
+            cursor: pointer;
+
+            & svg {
+              & path {
+                transition: 0.2s linear;
+              }
+            }
+
+            &:hover {
+              & svg {
+                & path {
+                  fill: $color-c00a27;
+                }
+              }
+            }
+          }
+
+          &-name {
+            text-wrap: wrap;
+            font-weight: 400;
+            font-size: 17px;
+            color: #000;
+            line-height: 18px;
+            @include media(490) {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+
+          &-price {
+            margin: 0px;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 18px;
+            color: $color-c00a27;
+            text-align: center;
+
+            @include media(490) {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+
+          &-plusOrMinus {
+            background-color: #f6f8f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 30px;
+            margin-top: 8px;
+            height: 40px;
+            min-width: 120px;
+            @include media(490) {
+              min-width: 100px;
+              height: 35px;
+            }
+          }
+
+          &-minus,
+          &-plus {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+            & svg {
+              & path {
+                transition: 0.2s linear;
+              }
+            }
+
+            &:hover {
+              & svg {
+                & path {
+                  fill: $color-ffae00;
+                }
+              }
+            }
+          }
+
+          &-count {
+            margin: 0px;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 22px;
+            color: rgb(0, 0, 0);
+            letter-spacing: 0.41px;
+          }
+        }
+      }
+    }
+  }
+}

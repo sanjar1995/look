@@ -1,0 +1,136 @@
+.contacts {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  margin: 100px 0;
+  padding: 25px;
+
+  @include media(900) {
+    flex-direction: column;
+    height: 900px;
+  }
+  @include media(600) {
+    height: 1200px;
+  }
+  @include media(500) {
+    height: 900px;
+  }
+
+  &-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include media(900) {
+      width: 100%;
+      height: 45%;
+    }
+    @include media(600) {
+      height: 50%;
+    }
+    @include media(500) {
+      height: 55%;
+    }
+
+    &__title {
+      margin: 0px 0px 20px;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 48px;
+      letter-spacing: 0.41px;
+      color: black;
+    }
+
+    &__hr {
+      width: 90%;
+      height: 2px;
+      margin: 0px;
+      flex-shrink: 0;
+      border-width: 0px 0px thin;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.12);
+    }
+
+    &__contact {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 45%;
+      margin-bottom: 10px;
+
+      @include media(600) {
+        grid-template-columns: 1fr;
+      }
+
+      & p {
+        margin: 0px;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22px;
+        color: black;
+      }
+
+      & span {
+        margin: 0px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(91, 104, 113);
+
+        & a {
+          color: $color-ffae00;
+          transition: 0.2s linear;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &__bot {
+      margin: 30px 0px 0px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 20px;
+      color: rgb(72, 83, 91);
+      letter-spacing: 0.24px;
+
+      @include media(900) {
+        margin-bottom: 30px;
+      }
+
+      & a {
+        color: $color-ffae00;
+        transition: 0.2s linear;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &-right {
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include media(900) {
+      width: 100%;
+      height: 55%;
+    }
+
+    @include media(500) {
+      height: 45%;
+    }
+    @include media(400) {
+      height: 35%;
+    }
+  }
+}

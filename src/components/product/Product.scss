@@ -1,0 +1,100 @@
+.products__item {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	background: #fff;
+
+	&-top {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	&-img {
+		width: 100%;
+		height: 150px;
+
+		@include media(420) {
+			height: 120px;
+		}
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			display: block;
+		}
+	}
+
+	&-title {
+		margin-top: 20px;
+		font-weight: 500;
+		line-height: 1;
+		color: $color-c00a27;
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+		text-wrap: wrap;
+		font-size: 16px;
+		margin-bottom: 18px;
+	}
+
+	&-price {
+		margin: 0px;
+		font-weight: 500;
+		line-height: 1;
+		color: rgb(48, 155, 66);
+		font-size: 16px;
+		margin-bottom: 35px;
+	}
+
+	&-btn {
+		background: #f6f8f9;
+		border: 0;
+		outline: none;
+		padding: 13px 0;
+		width: 100%;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: all 0.2s linear;
+
+		& span {
+			margin: 0px;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 1;
+			color: rgb(0, 0, 0);
+		}
+
+		&:hover {
+			background: $color-ffae00;
+		}
+	}
+}
+
+.swal2-popup.swal2-toast {
+	background: $color-c00a27 !important;
+
+	& .swal2-success-fix {
+		display: none;
+	}
+
+	& .swal2-success-circular-line-right {
+		display: none;
+	}
+
+	& .swal2-success-circular-line-left {
+		display: none;
+	}
+
+	& .swal2-title {
+		color: $color-ffae00;
+	}
+}

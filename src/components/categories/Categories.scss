@@ -1,0 +1,151 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  z-index: 50;
+  left: 0;
+  position: fixed;
+  top: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-x: auto;
+
+  .categories__title {
+    display: none;
+  }
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-c00a27;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-ffae00;
+    border-radius: 12px;
+  }
+
+  @include media(768) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  // &.sticky {
+  //   max-width: 1320px;
+  //   width: 100%;
+
+  //   height: max-content;
+  //   display: flex;
+
+  //   @include media(1340) {
+  //     max-width: 1220px;
+  //   }
+
+  //   @include media(1240) {
+  //     max-width: 1020px;
+  //   }
+
+  //   @include media(1080) {
+  //     max-width: 920px;
+  //   }
+
+  //   @include media(950) {
+  //     max-width: unset;
+  //   }
+
+  // }
+
+  &__title {
+    margin: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: 0.41px;
+    color: black;
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 30px;
+    overflow-x: auto;
+    height: max-content;
+    max-width: 1320px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    padding: 5px 20px;
+
+    @include media(1340) {
+      max-width: 1220px;
+    }
+
+    @include media(1240) {
+      max-width: 1020px;
+    }
+
+    @include media(1080) {
+      max-width: 920px;
+    }
+
+    @include media(950) {
+      max-width: unset;
+    }
+
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $color-c00a27;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-ffae00;
+      border-radius: 12px;
+    }
+
+    @include media(768) {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 10px;
+    background: #fff;
+    min-width: 80px;
+    width: 100%;
+    height: 80px;
+    flex-shrink: 1;
+
+    &-img {
+      width: 35px;
+      height: 35px;
+    }
+
+    &-span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      text-wrap: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

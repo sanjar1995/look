@@ -1,0 +1,108 @@
+{
+	"locale": {
+		"en": "English",
+		"ru": "Русский",
+		"uz": "O'zbekcha"
+	},
+	"header": {
+		"home": "Главная",
+		"vacancy": "Вакансии",
+		"ourAddresses": "Филиалы",
+		"contacts": "Контакты",
+		"cart": "Корзина",
+		"lang": "Выбрать язык"
+	},
+	"product": {
+		"addToCart": "В Корзину",
+		"currency": "сум",
+		"added": "добавлен в карзину"
+	},
+	"contacts": {
+		"title": "Контакты",
+		"callCenter": "Call-Центр / Доставка:",
+		"officeTitle": "Адрес офиса:",
+		"office": "г. Ташкент, Юнусабадский р-н., 13-й квартал, улица Ахмада Дониша, 1А",
+		"workTime": "Часы работы офиса:",
+		"email": "Электронная почта:",
+		"bot": "Вы можете заказать доставку через наш бот:"
+	},
+	"cart": {
+		"emptyTitle": "Ой, пусто!",
+		"emptySub": "Ваша корзина пуста, откройте «Меню» и выберите понравившийся товар.",
+		"emptyBtn": "Добавить в корзину",
+		"mainTopTitle": "Ваша корзина",
+		"mainTopClear": "Очистить корзину",
+		"mainCurrency": "сум",
+		"mainTotal": "Итого:",
+		"mainCheckout": "Оформить заказ"
+	},
+	"checkout": {
+		"title": "Оформить заказ",
+		"info": "Личные данные",
+		"infoName": "Имя",
+		"orders": "Ваш заказ",
+		"orderCurrency": "сум",
+		"address": "Адрес доставки",
+		"addressPlaceholder": "Найдите себя на карте и кликните что бы выбать",
+		"comment": "Заметка",
+		"commentPlaceholder": "Оставьте заметку к заказу если не обходимо",
+		"paymentType": "Тип оплаты",
+		"paymentCash": "Наличные",
+		"paymentOnline": "Онлайн оплата",
+		"paymentCard": "Терминал",
+		"total": "Итого",
+		"orderSum": "Стоимость заказа",
+		"deliveryPrice": "Цена доставки",
+		"unknown": "Неизвесто",
+		"deliveryTime": "Время доставки",
+		"dMinutes": "от 40 мин",
+		"totalSum": "Общая сумма",
+		"confirm": "Подтвердить",
+		"swal": {
+			"checkOrder": "Вы проверили свой заказ?",
+			"checkOrderYes": "Да",
+			"checkOrderNo": "Нет",
+			"ordreCancel": "Заказ не отправлен!",
+			"phoneErrorText": "Введите корректный номер телефона!",
+			"formErrorText": "Заполните форму!",
+			"oops": "Упс...",
+			"orderAcceptTitle": "Благодарим за ваш заказ!",
+			"orderAcceptText": "В ближайшее время с вами свяжется наш оператор.",
+			"orderPaymentError": "Недостаточно средств или проблемы с банком вашей карты!"
+		},
+		"onlinePay": {
+			"title": "Введите карту",
+			"cardNumberTitle": "Номер Карты",
+			"cardDateTitle": "Срок действия",
+			"continue": "Продолжить",
+			"cancel": "Отменить",
+			"smsCodeTitle": "Введите код",
+			"smsCodeSub": "Код отправлен на номер",
+			"smsCodeSec": "сек",
+			"successPaymentTitleHead": "Успешно!",
+			"successPaymentTitle": "Вы успешно провели",
+			"successPaymentCurrency": "сум.",
+			"successPaymentScreen": "Пожалуйста сделайте скриншот чека.",
+			"successPaymentViewCheck": "Для просмотра чека нажмите кнопку ниже.",
+			"successPaymentBtnCheck": "Чек заказа",
+			"oferta1": "Согласен с",
+			"oferta2": "Публичной Офертой"
+		},
+		"payError": {
+			"error": "Ошибка",
+			"cardNumberError": "Данные карты введены не правильно!",
+			"reenter": "Ввести заного",
+			"cancel": "Отменить",
+			"errorOTP": "Код из смс введен не правильно!",
+			"errorLocation": "Геолокация не поддерживается вашим браузером или API не загружено.",
+			"cardInputNotValid": "Введите данные карты!",
+			"smsInputNotValid": "Введите код из СМС!"
+		}
+	},
+	"footer": {
+		"findUsMap": "Найдите нас на карте",
+		"vacancy": "Вакансии",
+		"address": "Наши Адреса",
+		"menu": "Меню"
+	}
+}

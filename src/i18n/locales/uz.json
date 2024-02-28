@@ -1,0 +1,108 @@
+{
+	"locale": {
+		"en": "English",
+		"ru": "Русский",
+		"uz": "O'zbekcha"
+	},
+	"header": {
+		"home": "Asosiy Sahifa",
+		"vacancy": "Ish O'rinlari",
+		"ourAddresses": "Filiallar",
+		"contacts": "Kontaktlar",
+		"cart": "Savat",
+		"lang": "Tilni tanlash"
+	},
+	"product": {
+		"addToCart": "Savatga Qo'shish",
+		"currency": "so'm",
+		"added": "savatga qo'shildi"
+	},
+	"contacts": {
+		"title": "Kontaktlar",
+		"callCenter": "Aloqa-Markazi / Yetkazib berish:",
+		"officeTitle": "Ofis manzili:",
+		"office": "Toshkent sh., Yunusobod tumani, 13-kvartira, Ahmad Donish ko‘chasi, 1A",
+		"workTime": "Office ish vaqti:",
+		"email": "Email:",
+		"bot": "Siz bizning botimiz orqali yetkazib berishga buyurtma berishingiz mumkin:"
+	},
+	"cart": {
+		"emptyTitle": "Savat bo'sh!",
+		"emptySub": "Savatingiz bo'sh, «Menyu» ni oching va o'zingizga yoqqan mahsulotni tanlang.",
+		"emptyBtn": "Savatga qo'shish",
+		"mainTopTitle": "Sizning savatingiz",
+		"mainTopClear": "Savatni tozalash",
+		"mainCurrency": "so'm",
+		"mainTotal": "Jami:",
+		"mainCheckout": "Buyurtmani tasdiqlash"
+	},
+	"checkout": {
+		"title": "Buyurtmani tasdiqlash",
+		"info": "Shaxsiy ma'lumotlar",
+		"infoName": "Ism",
+		"orders": "Buyurtmangiz",
+		"orderCurrency": "so'm",
+		"address": "Yetkazib berish manzili",
+		"addressPlaceholder": "O'zingizni xaritada toping va tanlash uchun bosing",
+		"comment": "Eslatma",
+		"commentPlaceholder": "Agar kerak bo'lsa, buyurtma uchun eslatma qoldiring",
+		"paymentType": "To'lov turi",
+		"paymentCash": "Naqd pul",
+		"paymentOnline": "Onlayn to'lov",
+		"paymentCard": "Terminal",
+		"total": "Jami",
+		"orderSum": "Buyurtma narxi",
+		"deliveryPrice": "Yetkazib berish narxi",
+		"unknown": "Noma'lum",
+		"deliveryTime": "Yetkazib berish vaqti",
+		"dMinutes": "40 daqiqadan boshlab",
+		"totalSum": "Umumiy narxi",
+		"confirm": "Tasdiqlash",
+		"swal": {
+			"checkOrder": "Buyurtmangizni tekshirdingizmi?",
+			"checkOrderYes": "Ha",
+			"checkOrderNo": "Yoq",
+			"ordreCancel": "Buyurtma yuborilmadi!",
+			"phoneErrorText": "Iltimos, to'g'ri telefon raqamini kiriting!",
+			"formErrorText": "Formani to'ldiring!",
+			"oops": "Hatolik...",
+			"orderAcceptTitle": "Buyurtmangiz uchun rahmat!",
+			"orderAcceptText": "Tez orada operatorimiz siz bilan bog'lanadi.",
+			"orderPaymentError": "Pul yetarli emas yoki bank kartasi bilan bog'liq muammolar!"
+		},
+		"onlinePay": {
+			"title": "Kartani kiriting",
+			"cardNumberTitle": "Karta raqami",
+			"cardDateTitle": "Amal qilish muddati",
+			"continue": "Davom etish",
+			"cancel": "Ortga",
+			"smsCodeTitle": "SMS kodni kiriting",
+			"smsCodeSub": "SMS kode quydagi nomerga jonatildi:",
+			"smsCodeSec": "soniya",
+			"successPaymentTitleHead": "Muvaffaqiyatli!",
+			"successPaymentTitle": "Siz",
+			"successPaymentCurrency": "so'm muvaffaqiyatli sarfladingiz",
+			"successPaymentScreen": "Iltimos, chekni skrinshot qilib oling.",
+			"successPaymentViewCheck": "Chekni ko‘rish uchun quyidagi tugmani bosing.",
+			"successPaymentBtnCheck": "Buyurtma cheki",
+			"oferta1": "Men",
+			"oferta2": "Ommaviy Ofertaga Roziman"
+		},
+		"payError": {
+			"error": "Hatolik",
+			"cardNumberError": "Karta ma'lumotlari noto'g'ri kiritilgan!",
+			"reenter": "Qayta kiritish",
+			"cancel": "Ortga",
+			"errorOTP": "SMS kod noto'g'ri kiritildi!",
+			"errorLocation": "Geolocation brauzeringiz tomonidan qo‘llab-quvvatlanmaydi yoki API yuklanmagan.",
+			"cardInputNotValid": "Karta ma'lumotlarini kiriting!",
+			"smsInputNotValid": "SMS kodini kiriting!"
+		}
+	},
+	"footer": {
+		"findUsMap": "Bizni haritadan toping",
+		"vacancy": "Ish O'rinlari",
+		"address": "Manzillarimiz",
+		"menu": "Menyu"
+	}
+}
